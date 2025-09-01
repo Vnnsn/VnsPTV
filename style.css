@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #333;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.botao {
+    background-color: oklch(27.9% 0.041 260.031);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.cabecalho {
+    background-color: white;
+    box-shadow: 0 2px 5px #0000001a;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: oklch(27.9% 0.041 260.031);
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+
+}
+
+.menu a {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 40px 0;
+
+}
+
+.destaque {
+    padding-top: 90px;
+    background-color: oklch(70.4% 0.04 256.788);
+    display: flex;
+}
+
+.destaque .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.texto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+.recursos .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} 
+
+.card {
+    padding: 20px;
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 50px;
+}
+
+.card .h3-person {
+    padding: 20px;
+    text-align: justify;
+}
+
+.card h3 {
+    padding: 20px;
+}
+
+.card h3 a {
+    background-color: oklch(70.382% 0.04025 257.029);
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.icone {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta {
+    background-color: oklch(70.4% 0.04 256.788);
+    color: #333;
+    text-align: center;
+}
+
+.cta p {
+    font-weight: bold;
+}
+
+.cta a {
+    color: black;
+    background-color: oklch(98.5% 0.002 247.839);
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.cta a:hover {
+    width: 70px;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.10 ease-in-out;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+.list {
+    list-style-type: decimal;
+}
+
+
+.botao-menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.recursos .p-tt1 {
+    padding-left: 15%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.renovacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.renovacao h1 {
+    font-size: 30px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:768px){
+    .destaque .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .recursos .container {
+        grid-template-columns: 1fr;
+    }
+
+    .cta {
+        padding: 20px;
+    }
+
+    .botao-menu {
+        display: block;
+    }
+
+.menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    max-height: 0;
+}
+
+    .menu.ativo {
+        max-height: 200px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}
