@@ -177,13 +177,12 @@ h2 {
 }
 
 .recursos .p-tt1 {
-    padding-left: 15%;
     font-weight: bold;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
-
 
 .renovacao {
     display: flex;
