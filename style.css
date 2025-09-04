@@ -183,6 +183,8 @@ h2 {
 }
 
 
+
+
 .renovacao {
     display: flex;
     flex-direction: column;
@@ -200,6 +202,16 @@ footer {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+}
+
+.canais {
+    display: flex;
+    padding: 40px;
+    margin: 20px;
+    background-color: oklch(70.4% 0.04 256.788);
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
 }
 
 @media screen and (max-width:768px){
